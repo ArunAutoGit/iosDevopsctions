@@ -1,0 +1,43 @@
+name: step1
+
+on: push
+
+jobs: 
+  Selenium_test:    
+   runs-on:  macos-latest
+   
+   steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Run inline script
+        run: |
+          mkdir hai
+          ls -l
+      - name: Run install node
+        run: |
+             cd hai
+             npm install hai
+      - name: get node version script
+        run: |
+            cd hai
+            node --version
+      - name: install Appium script
+        run: |
+            cd hai
+            npm install -g appium@next
+      - name: get Appium version
+        run: |
+            cd hai
+            appium --version
+      - name: install Appium Doctor
+        run: |
+            cd hai
+            npm install appium-doctor -g
+      - name: get Appium Doctor deatils
+        run: |
+            cd hai
+            appium-doctor
+      - name: get Appium driver
+        run: |
+            emulator -list-avds
+            xcrun simctl list
