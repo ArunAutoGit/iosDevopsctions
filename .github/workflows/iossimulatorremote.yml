@@ -34,10 +34,6 @@ jobs:
             cd hai
             npm install -g start-ios-simulator
             start-ios-simulator
-      - name: get Appium Doctor deatils
-        run: |
-            cd hai
-            appium-doctor
       - name: get Appium driver
         run: |
             xcrun simctl list
