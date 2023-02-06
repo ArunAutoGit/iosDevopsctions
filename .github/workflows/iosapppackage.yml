@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-jobs:
+jobs: 
   build:
     name: Build and Test default scheme using iPhone/iPad simulator
     runs-on: macos-latest
