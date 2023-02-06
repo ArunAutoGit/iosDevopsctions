@@ -1,8 +1,6 @@
 name: iOS Test Workflow
-on:
-  push:
-    branches:
-      - master
+on: push
+
 jobs: 
   build:
     name: Build and Test default scheme using iPhone/iPad simulator
