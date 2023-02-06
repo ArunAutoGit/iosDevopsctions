@@ -39,5 +39,5 @@ jobs:
             appium-doctor
       - name: get Appium driver
         run: |
-            emulator -list-avds
+            xcrun simctl launch B5563273-C457-4821-8DD7-8E84718A923B
             xcrun simctl list
